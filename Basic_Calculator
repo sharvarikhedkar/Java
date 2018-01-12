@@ -1,0 +1,34 @@
+package Basic_Calculator;
+
+import java.util.Scanner;
+
+public class MyClass {
+
+	public static void main(String[] args) {
+		float add,multi,div,sub;
+		int op;
+		Scanner scan  = new Scanner(System.in);
+	//accepting numbers	
+		System.out.println("Enter first number");
+		float num1=scan.nextFloat();
+		System.out.println("Enter Second number");
+		float num2=scan.nextFloat();
+	//Operations
+	System.out.println("Enter 1.Addition 2.Multiplication");
+		int ch =scan.nextInt();
+	//switch case statements	
+		switch(ch)
+		{
+		case 1 :
+			add=num1+num2;
+			System.out.println("Addition = "+add);
+			break;
+		
+		case 2 :
+			multi=num1*num2;
+			System.out.println("Multiplication = "+multi);
+			break;
+	
+		}
+	}
+}
