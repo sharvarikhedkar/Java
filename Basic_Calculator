@@ -14,7 +14,7 @@ public class MyClass {
 		System.out.println("Enter Second number");
 		float num2=scan.nextFloat();
 	//Operations
-	System.out.println("Enter 1.Addition 2.Multiplication");
+	System.out.println("Enter 1.Addition 2.Multiplication 3.Division");
 		int ch =scan.nextInt();
 	//switch case statements	
 		switch(ch)
@@ -27,6 +27,11 @@ public class MyClass {
 		case 2 :
 			multi=num1*num2;
 			System.out.println("Multiplication = "+multi);
+			break;
+			
+		case 3 :
+			div = num1/num2;
+			System.out.println("Division = "+div);
 			break;
 	
 		}
